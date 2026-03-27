@@ -24,7 +24,7 @@ export function ContactSection() {
           <div className={`rounded-sm overflow-hidden shadow-md transition-all duration-700 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}>
             <iframe
               title="Naman Vastu Designs Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.1756!2d75.7865!3d26.8665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s61%20Padam%20Vihar%2C%20Jaipur!5e0!3m2!1sen!2sin!4v1711610400000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.296237914424!2d75.7500037754377!3d26.862327676677275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db51b8436b271%3A0xe03d7ad53c9875af!2sNAMAN%20VAASTU%20AND%20DESIGNS!5e0!3m2!1sen!2sin!4v1774597764038!5m2!1sen!2sin"
               width="100%"
               height="400"
               style={{ border: 0 }}
