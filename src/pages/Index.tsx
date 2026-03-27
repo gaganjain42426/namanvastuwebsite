@@ -7,6 +7,8 @@ import { ServicesSection } from "@/components/ServicesSection";
 import { ProcessSection } from "@/components/ProcessSection";
 import { VastuSection } from "@/components/VastuSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { VastuTipsSection } from "@/components/VastuTipsSection";
+import { FAQSection } from "@/components/FAQSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { ConsultationForm } from "@/components/ConsultationForm";
@@ -26,6 +28,8 @@ const Index = () => {
         <ProcessSection />
         <VastuSection />
         <TestimonialsSection />
+        <VastuTipsSection />
+        <FAQSection />
         <ContactSection />
       </main>
       <Footer onBookConsultation={() => setConsultationOpen(true)} />
