@@ -12,7 +12,7 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: Instagram, href: "https://www.instagram.com/namanvaastudesigns/", label: "Instagram" },
   { icon: Facebook, href: "#", label: "Facebook" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
 ];
@@ -60,18 +60,18 @@ export function Footer({ onBookConsultation }: { onBookConsultation?: () => void
               <li className="flex items-start gap-3 text-cream/60 text-sm">
                 <MapPin size={18} className="text-gold flex-shrink-0 mt-0.5" />
                 <span>
-                  Tonk Road, Near Jawahar Circle,
+                  61, Padam Vihar, Rajat Path,
                   <br />
-                  Jaipur, Rajasthan 302018
+                  New Sanganer Rd, Jaipur, Rajasthan 302020
                 </span>
               </li>
               <li>
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+917791919898"
                   className="flex items-center gap-3 text-cream/60 hover:text-gold transition-colors text-sm"
                 >
                   <Phone size={18} className="text-gold" />
-                  <span>+91 98765 43210</span>
+                  <span>+91 77919 19898</span>
                 </a>
               </li>
               <li>

@@ -24,7 +24,7 @@ export function ContactSection() {
           <div className={`rounded-sm overflow-hidden shadow-md transition-all duration-700 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}>
             <iframe
               title="Naman Vastu Designs Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.5!2d75.7873!3d26.8587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDUxJzMxLjMiTiA3NcKwNDcnMTQuMyJF!5e0!3m2!1sen!2sin!4v1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.175597!2d75.7865455!3d26.8664789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s61%20Padam%20Vihar%2C%20Rajat%20Path%2C%20New%20Sanganer%20Rd%2C%20Jaipur%2C%20Rajasthan%20302020!5e0!3m2!1sen!2sin!4v1711610400000"
               width="100%"
               height="400"
               style={{ border: 0 }}
@@ -44,7 +44,7 @@ export function ContactSection() {
               <div>
                 <h4 className="font-serif text-lg text-foreground mb-1">Our Studio</h4>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Tonk Road, Near Jawahar Circle,<br />Jaipur, Rajasthan 302018
+                  61, Padam Vihar, Rajat Path,<br />New Sanganer Rd, Jaipur, Rajasthan 302020
                 </p>
               </div>
             </div>
@@ -55,8 +55,8 @@ export function ContactSection() {
               </div>
               <div>
                 <h4 className="font-serif text-lg text-foreground mb-1">Call Us</h4>
-                <a href="tel:+919876543210" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  +91 98765 43210
+                <a href="tel:+917791919898" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  +91 77919 19898
                 </a>
               </div>
             </div>
