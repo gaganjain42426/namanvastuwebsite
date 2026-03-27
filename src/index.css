@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm neutral palette - quiet luxury */
+    --background: 40 20% 97%;
+    --foreground: 30 10% 15%;
+
+    --card: 40 15% 95%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 40 20% 97%;
+    --popover-foreground: 30 10% 15%;
+
+    /* Muted gold as primary accent */
+    --primary: 42 65% 45%;
+    --primary-foreground: 40 20% 97%;
+
+    /* Warm taupe secondary */
+    --secondary: 30 12% 88%;
+    --secondary-foreground: 30 10% 25%;
+
+    /* Soft grey muted */
+    --muted: 35 10% 92%;
+    --muted-foreground: 30 8% 45%;
+
+    /* Warm accent */
+    --accent: 35 15% 90%;
+    --accent-foreground: 30 10% 20%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 40 20% 97%;
+
+    --border: 35 15% 88%;
+    --input: 35 15% 88%;
+    --ring: 42 65% 45%;
+
+    --radius: 0.25rem;
+
+    /* Custom colors */
+    --gold: 42 65% 45%;
+    --gold-light: 42 55% 65%;
+    --gold-dark: 42 70% 35%;
+    --taupe: 30 12% 50%;
+    --cream: 40 30% 96%;
+    --warm-grey: 35 8% 40%;
+    --charcoal: 30 15% 12%;
+
+    /* Sidebar */
+    --sidebar-background: 30 15% 12%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 42 65% 45%;
+    --sidebar-primary-foreground: 40 20% 97%;
+    --sidebar-accent: 30 12% 20%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 30 12% 25%;
+    --sidebar-ring: 42 65% 45%;
+  }
+
+  .dark {
+    --background: 30 15% 8%;
+    --foreground: 40 20% 95%;
+
+    --card: 30 12% 12%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 30 15% 8%;
+    --popover-foreground: 40 20% 95%;
+
+    --primary: 42 65% 55%;
+    --primary-foreground: 30 15% 8%;
+
+    --secondary: 30 10% 18%;
+    --secondary-foreground: 40 20% 90%;
+
+    --muted: 30 10% 18%;
+    --muted-foreground: 35 10% 55%;
+
+    --accent: 30 10% 18%;
+    --accent-foreground: 40 20% 95%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 40 20% 95%;
+
+    --border: 30 10% 20%;
+    --input: 30 10% 20%;
+    --ring: 42 65% 55%;
+
+    --sidebar-background: 30 15% 6%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 42 65% 55%;
+    --sidebar-primary-foreground: 30 15% 8%;
+    --sidebar-accent: 30 10% 15%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 30 10% 15%;
+    --sidebar-ring: 42 65% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .text-gold-gradient {
+    background: linear-gradient(135deg, hsl(42 70% 55%) 0%, hsl(42 55% 40%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gold-gradient {
+    background: linear-gradient(135deg, hsl(42 65% 50%) 0%, hsl(42 70% 40%) 100%);
+  }
+
+  .gold-border {
+    border-image: linear-gradient(135deg, hsl(42 70% 55%), hsl(42 55% 40%)) 1;
+  }
+}
+
+@layer components {
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-500 ease-out;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px -15px hsla(30, 10%, 15%, 0.15);
+  }
+
+  .image-reveal {
+    @apply overflow-hidden;
+  }
+
+  .image-reveal img {
+    @apply transition-transform duration-700 ease-out;
+  }
+
+  .image-reveal:hover img {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
